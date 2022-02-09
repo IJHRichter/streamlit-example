@@ -18,7 +18,7 @@ st.title("Fun Facts about Isabel")
 st.write("As I introduce myself to Streamlit, I've created this page to share a bit about me.")
 
 st.subheader("Outside of work and school, I love hiking with my dog, Oliva.")
-image = Image.open('Puppy.jpg')
+image = Image.open('Puppy.JPG')
 st.image(image, caption='This is Olivia.')
 
 #Display a video with a set start time 
