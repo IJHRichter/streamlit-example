@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import datetime as dt
-import plotly.express as px
 from PIL import Image
 
 @st.cache
@@ -91,12 +89,6 @@ if showVolcanoes:
     AllLoc= st.dataframe(travelLoc) 
     AllLoc.add_rows(volcLoc)
     
-    #Include bar graph of locations of volcanos
-    #Code for displaying loading text from Uber Test App code
-    volc_loading= st.text("Loading Volcanoes by Region...") 
-    st.write(px.bar(volcData,x='region')) 
-    volc_loading.text("Now let's check the Volcano Count by Region of the World.")
-
 
 @st.experimental_memo
 def set_fav_foods(fruit,veg):
